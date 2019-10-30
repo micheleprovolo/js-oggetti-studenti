@@ -37,10 +37,30 @@ var student1 = {
   };
 
 var arrayStud = [student1, student2, student3];
-// console.log(arrayStud);
+console.log(arrayStud);
 
 // Ciclare su tutti gli studenti e stampare per ognuno nome e cognome
+// var nomeCognome = student1.firstName + student1.lastName;
 
-for (var key in arrayStud) {
-        console.log(arrayStud[key]);
-}
+// for (var key in nomeCognome) {
+//         console.log(student1[key]);
+        
+// }
+
+
+
+// - Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+
+// creo nuovo oggetto vuoto da riempire
+var newstudent = {};
+
+var usernome = prompt("Inserisci nome dello studente");
+var usercognome = prompt("Inserisci cognome dello studente");
+var usereta = parseInt(prompt("Inserisci età dello studente"));
+
+//assegno i valori ottenuti tramite i 3 prompt all'oggetto 
+newstudent.nome = usernome;
+newstudent.cognome = usercognome;
+newstudent.eta = usereta
+
+console.log("stampo nuovo oggetto studente", newstudent);
